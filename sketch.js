@@ -1,5 +1,5 @@
 let socket;
-let canal = "canal-1"; // Elige el nombre que quieras
+let canal = "canal-12"; // Elige el nombre que quieras
 
 function setup() {
   createCanvas(400, 400);
@@ -19,7 +19,7 @@ function draw() {
   text("Mueve el mouse para enviar datos", 10, 20);
 
   // Mapeamos la posición X (0-400) a un ángulo (0-180)
-  let valor = floor(map(mouseX, 0, width, 0, 180));
+  let valor = floor(map(mouseX, 0, width, 0, 500));
 
   // Solo enviamos si el mouse está dentro del lienzo
   if (mouseX > 0 && mouseX < width) {
